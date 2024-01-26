@@ -1,187 +1,202 @@
-<!-- for comment any section just click ctrl + slash(/) -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cascading Style Sheet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- this is google font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- font aswsome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Advanced CSS</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <!--internal css part
-  <style>
-    h1 {
-      background-color: orange;
-    }
-    p {
-      background-color: green;
-    }
-  </style> -->
   <body>
-    <!--<h1>
-      style="background-color: orange; color: white" also we can add in this h1 tag
-      Now we are learning CSS
-    </h1>
-    for separating use semicolon; inline css style
-    <p>
-      style="background-color: green;" also we can add in this p tag
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum totam facere
-      natus expedita soluta quisquam labore velit accusamus delectus, sunt enim
-      beatae alias corrupti quas, ea, quo eum voluptatem voluptatibus?
-    </p>
-    <p>I am the first Paragraph</p>
-    <ul>
-      <li><a href="#">Google</a></li>
-    </ul>
-    <a href="#">Visit My Web page</a>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptas.
-      </p>
-    </div>-->
-    <!--<div>
-      <section id="sec1">
-        <h2>Section 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          beatae quod asperiores modi iusto eius perspiciatis harum doloribus
-          illo sapiente!
-        </p>
-      </section>
-      <section id="sec2">
-        <h2>Section 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          cupiditate facilis temporibus ab modi earum nostrum autem inventore
-          non laboriosam.
-        </p>
-      </section>
-    </div>-->
-    <!--<button class="btn">button 1</button>
-    <button class="btn">button 2</button>
-    <button>button 3</button>
-    <div class="first-div">
-      <button class="btn">Inside div button</button>
-    </div>-->
+    <nav class="center">
+      <ul>
+        <li><a href="#" class="nav_link">Home</a></li>
+        <li><a href="#" class="nav_link">About</a></li>
+        <li><a href="#" class="nav_link">Contact</a></li>
+      </ul>
+    </nav>
+    <header></header>
+    <main>
+      <!-- <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit corporis
+        voluptatum similique hic necessitatibus laboriosam temporibus explicabo
+        ea nam non? Autem possimus non excepturi cumque, laborum quia corrupti
+        cum eum quod voluptate iusto consequuntur blanditiis alias magni, hic
+        minima iure harum. Provident rem vero neque explicabo officiis numquam
+        vel. Harum ullam sint ex cupiditate quos assumenda rem illum accusamus
+        omnis odio. Dolore quia, tenetur velit doloribus distinctio quasi maxime
+        totam non officiis vitae deserunt, amet ipsa sit. Quisquam, ipsum?
+        Debitis officia qui illo! Tempore nesciunt, eius et rem alias provident,
+        quas hic, repellat aspernatur rerum impedit pariatur praesentium facere
+        obcaecati.
+      </p> -->
 
-    <!--<input type="text" placeholder="name" />
-    <input type="email" placeholder="age" /> -->
-    <!--<a href="#">Visit my Website</a>
-    <a href="#">Visit my Website2</a>
-    <a href="#">Visit my Website3</a>
-    <button disabled>Click Me Here</button>
-    <input type="text">-->
-    <!--<p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores
-      consequuntur excepturi molestiae ut? Blanditiis ullam consectetur odit
-      libero molestiae?
-    </p>-->
-    <!--<ul>
-      <li>item1</li>
-      <li>item2</li>
-      <li>item3</li>
-      <li>item4</li>
-    </ul>-->
-    <!-- <div id="div1">
-      <p>paragraph1</p>
-      <p>paragraph2</p>
-      <div>
-        <p>paragraph3</p>
-        <div>
-          <p>paragraph4</p>
+      <!-- skill section start  -->
+      <section class="skills">
+        <!-- <h2 class="section-title">Skills</h2> -->
+        <div class="row cen">
+          <!-- card-1  -->
+          <div class="card">
+            <h3 class="card-tile">CSS</h3>
+            <div class="card-body">
+              <p>Level:4/5</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis, numquam.
+              </p>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <!-- card-2  -->
+          <div class="card">
+            <h3 class="card-tile">JavaScript</h3>
+            <div class="card-body">
+              <p>Level:3.5/5</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis, numquam.
+              </p>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <!-- card-3  -->
+          <div class="card">
+            <h3 class="card-tile">HTML</h3>
+            <div class="card-body">
+              <p>Level:4.5/5</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis, numquam.
+              </p>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skill section end  -->
+
+      <!-- tuirorial section section start  -->
+      <section class="tuitorials-section">
+        <h2 class="section-title">Tuitorials</h2>
+        <div class="tuitorials center">
+          <div class="tuitorial center"><h2 class="item1">Tuitorial1</h2></div>
+          <div class="tuitorial center"><h2 class="item2">Tuitorial2</h2></div>
+          <div class="tuitorial center"><h2 class="item3">Tuitorial3</h2></div>
+        </div>
+      </section>
+
+      <!-- tuitorial section ends  -->
+
+      <!-- team section start  -->
+      <section class="team-section">
+        <h2 class="section-title">Team Members</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <h3>Team Member 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              nobis?
+            </p>
+          </div>
+          <div class="team-member" id="team-member2">
+            <h3>Team Member 2</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corrupti, optio.
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 3</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
+              excepturi.
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              quae!
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 5</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore, excepturi?
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 6</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Blanditiis, nam?
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 7</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis, veniam.
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 8</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+              ipsum!
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 9</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, quaerat.
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 10</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dignissimos, corporis!
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 11</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+              sint.
+            </p>
+          </div>
+          <div class="team-member">
+            <h3>Team Member 12</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              aliquid!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- team section end  -->
+
+      <!-- <section class="tuitorials">
+        <div id="tuitorial1">this is div 1</div>
+        <div id="tuitorial2">this is div 2</div>
+        <div id="tuitorial3">this is div 3</div>
+      </section> -->
+      <!-- <section class="parent">
+        <div class="child">This is Child Div</div>
+      </section> -->
+
+      <!-- animation section starts here  -->
+      <div class="parent-div">
+        <div class="circle-div">
+          <!-- <h2>i am circle</h2> -->
         </div>
       </div>
-    </div>-->
-    <!--<div id="div1">
-      <p>paragraph 1</p>
-    </div>
-    <p>paragraph 2</p>
-    <p>paragraph 3</p>-->
-    <!-- <p>Hello From India, Currently I am living in Kolkata</p> -->
-    <!-- <h1>Hello From India</h1> -->
-    <!-- <a href="#">Home</a> -->
-    <!-- <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas fuga
-      voluptatibus numquam quo aperiam quis eos sapiente cupiditate ea. Libero
-      harum accusamus earum quas dolore possimus nostrum, inventore corrupti.
-    </p> -->
-    <!-- <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2> -->
-
-    <!-- using fa-4x we can bigger the icon 
-    we can adding our own class "icon"-->
-    <!-- <i class="fa-solid fa-trash icon"></i>
-    <span>&hearts;</span> -->
-
-    <!-- block elements -->
-    <!-- <h1>This is heading1</h1>
-    <h1>This is heading2</h1> -->
-
-    <!-- inline elements -->
-    <!-- <a href="#">Link 1</a>
-    <a href="#">Link 2</a> -->
-
-    <!-- <p id="para1">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, non?
-    </p>
-    <p id="para2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-      cupiditate.
-    </p> -->
-
-    <!-- opacity -->
-    <!-- <img src="./img1.png" alt=""> -->
-
-    <!-- <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-        quisquam repudiandae nihil harum sequi blanditiis excepturi soluta
-        dolorum architecto, ut accusamus a ea voluptates eum debitis fugit
-        dolores sit magnam quaerat aut autem corporis illo! Perspiciatis animi
-        vero enim itaque tenetur voluptatibus quam labore nulla, unde nihil
-        omnis rem numquam inventore eaque deleniti nobis illum architecto quos
-        nemo sint vel fugit neque consequuntur est! Tenetur quisquam atque illo
-        quibusdam error, aut placeat expedita sint nobis doloribus delectus,
-        dolores id ratione corrupti dolorem quo voluptates quam, assumenda totam
-        perferendis. Quasi odit officiis quas dolor ab. Quod delectus laborum
-        numquam facere illum.
-      </p>
-    </div> -->
-
-    <header>
-      <h2>This is Header</h2>
-    </header>
-    <main>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus unde
-        vero consectetur, temporibus voluptatum exercitationem quod velit ab
-        iste consequatur sequi ullam voluptates eos porro aliquid! Ullam
-        voluptatum incidunt sit sequi? Expedita pariatur rerum qui corporis
-        tempora perspiciatis animi nesciunt! Voluptas labore doloremque,
-        pariatur dolores culpa similique aspernatur molestiae eius adipisci
-        dolorem fugiat expedita architecto, ex tempora rem cumque ipsam
-        cupiditate. Modi laborum impedit quasi soluta eius mollitia? Animi sit
-        aperiam quam laborum, quos odio architecto quas inventore consectetur
-        mollitia dolorem asperiores modi corporis placeat, a, minus officiis!
-        Nulla ratione delectus totam veritatis? Voluptas error commodi dolore
-        ratione. Tempore, porro.
-      </p>
+      <!-- animation section ends here  -->
     </main>
+    <footer class="center">
+      <p>Copyright by Tamal Barman</p>
+    </footer>
   </body>
 </html>

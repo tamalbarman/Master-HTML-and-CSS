@@ -1,0 +1,108 @@
+/* .heading { */
+/* (2) now its get higher priority  */
+/* background-color: deeppink !important; */
+/* } */
+
+/* h1 {
+  background-color: coral;
+} */
+
+/* h1.heading{
+    background-color: aqua;
+} */
+
+/* .heading {
+  /* (1) h1 override beacuse of more power more ability. css trackig of their score
+  background-color: royalblue;
+} */
+
+/* #title { */
+/*(3) now its get higher priority  */
+/* background-color: green; */
+/* } */
+
+/* important > inline > id > calss is > element  */
+
+/* spacificity calculator  */
+
+/* a = number of id
+b = number of class, psudo classes, attributes
+c = number of elements, pseudo elements
+
+a b c
+0 1 1 */
+
+/* BEM */
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 20rem;
+}
+
+.title {
+  color: brown;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.card {
+}
+
+.card__title {
+  color: orange;
+}
+
+.card__desc {
+}
+
+.card__btn {
+}
+
+.card__btn--large {
+  width: 20rem;
+}
+
+.feedback {
+  background-color: bisque;
+}
+
+.card--large {
+  background-color: aqua;
+  width: 50rem;
+}
+
+/* #container h2 {
+  color: gray;
+}
+
+.c h2 {
+  color: red;
+} */
+
+/* 1. Specificity iseue : avoid id/tag 
+   2. class name clashes 
+   3. Not a standard name for class 
+   this can solve in bem methodology 
+   
+   BEM - Block, Element and Modifier 
+   Block - we can use letters, digits, dashes for naming block; 
+   use dash when more than one word
+   
+   Element-we can use letters, digits, dashes, underscore for naming element
+   syntax: block__elemnt (double underscore)
+   
+   Modifier - we can use letters, digits, dashes, underscore for naming modifier
+   syntax: block/element--modifier */

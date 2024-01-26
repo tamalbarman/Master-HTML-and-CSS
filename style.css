@@ -1,258 +1,350 @@
-/* for comment any section just click ctrl + slash(/) */
-
-/*element selctor
-h1 {
-  background-color: orange;
-  color: white;
-}
-p {
-  background-color: green;
-  color: white;
-} */
-
-/*group multiple element
-h1,
-p {
-  background-color: burlywood;
-} */
-
-/*nested selector
-ul li a {
- 
-  color: orange;
-  color: white; last one will be genrate by overide the 1st
+/* creating variable for access all color */
+:root {
+  --text-color: #fff;
+  --pading: 1rem;
 }
 
-div p {
-  color: aqua;
-} */
-
-/*universal selector denoted by astric
-* {
-  background-color: burlywood;
-  color: red;
-} */
-
-/*id selector <section id="sec1">
-#sec1 {
-  background-color: orange;
-  color: white;
-}
-#sec2 {
-  background-color: green;
-  color: white;
-} */
-
-/*class selector using(.)
-.btn {
-  background-color: orange;
-}
-.first-div {
-  background-color: bisque;
-} */
-
-/*attribute selector
-input[type="text"] {
-  background-color: greenyellow;
-}
-input[type="email"] {
-  background-color: rgb(255, 158, 47);
-}*/
-
-/*psudo class(:)
-a:hover {
-  color: green;
-}
-a:active {
-  color: red;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-button:disabled {
-  background-color: red;
-  color: black;
-}
-input:focus {
-  background-color: aqua;
-}*/
-
-/*psudo element selector(::)
-p::first-letter {
-  color: red;
-}
-p::after {
-  /*after this make sure there hava a content id
-  content: "a";
-  /* border: 1rem solid green;
-  display: inline-block;
-  height: 50rem;
-}
-p::before {
-  content: ">";
-}*/
-
-/*child selector
-ul li:first-child {
-  color: orange;
-}
-ul li:last-child {
-  color: orange;
-}
-ul li:nth-child(3) {
-  color: orange;
-}*/
-
-/*desendent selector
-div p {
-  color: green;
-}
-#div1 p {
-  color: orange;
-}
-/*child selector
-#div1 > p {
-  color: aqua;
-}*/
-/*adjusent selector
-#div1 + p {
-  color: orange;
-}
-/*general selector
-#div1 ~ p {
-  color: orange;
-}*/
-
-/*typography 1rem = 16px = 100% */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"); */
-
-/* p {
-  /* font-size: 1.2rem;
-  font-weight: bold;
-  font-style: italic; */
-/* font-family: "Courier New", Courier, monospace; */
-/* font-family: "Roboto", sans-serif; */
-/* font-family: "Roboto", sans-serif; */
-/* color: aqua; */
-/* color: rgb(124,205,0.9); 0 to 255 range */
-/* color: #afc; hexadecimal color 0-9 then a,b,c..f
-} */
-
-/* h1 {
-  font-family: "Roboto", sans-serif;
-  /* text-align: center;
-  text-transform: capitalize;
-  text-decoration: underline;
-  text-indent: 5rem;
-  letter-spacing: 0.5rem;
-  text-shadow: 0.1rem 0.2rem green;
-
-} */
-
-/* a {
-  text-decoration: none;
-} */
-
-/* p {
-  line-height: 2rem;
-} */
-
-/* box model */
-/* h1 {
-  /* box-sizing: border-box; padding and border they use extra space*/
-/* background-color: brown;
-  width: 400px;
-  padding: 0 50px;
-  margin: 10px;
-  border: 10px solid aqua; */
-
-/* padding: 10px 5x; (top bottom) (left right) */
-/* padding: 0 200px; */
-/* border: 10px solid orange;
-  margin: 10px; */
-/* // 400px + 5px + 5px + 10px + 10px + 10px + 10px 
-  = 450px of the current with the box */
-/* padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-h2 {
-  background-color: orange;
-}*/
-
-/* work with emoji and icon */
-/* .icon {
-  font-size: 2rem;
-  color: red;
-}
-
-span {
-  color: red;
-  font-size: 2rem;
-} */
-
-/* h1,
-h2 {
-  background-color: aqua;
-  display: inline; /*using this we can act blockline elements as a inline element
-}*/
-
-/* biggener mistake here */
-/* a {
-  background-color: lightgreen;
-  padding: 10px;
-  border: 2px solid blueviolet;
-  margin: 10px;
-  display: inline-block;
-} */
-
-/* #para1 {
-  background-color: aqua;
-  /* width: 500px;
-  max-width: 500px; */
-/* height: 10vh; vertical height for customize
-}
-#para2 {
-  background-color: rgb(255, 119, 0);
-  /* width: 500px; */
-/* max-width: 500px; for compatible with screen
-  height: 85vh;
-} */
-
-/* img {
-  opacity: 0.5;
-}
-
-img:hover{
-  opacity: 1;
-} */
-
-/* universal selector */
 * {
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
-/* opecity and overflow */
-/* div {
-  width: 400px;
-  height: 100px;
-  background-color: aqua;
-  overflow: scroll;
-} */
 
-/* body {
-  background-color: aqua;
-} */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* header {
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: burlywood;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav_link {
+  color: black;
+  font-size: 1.4rem;
+  transition: all 0.4s linear;
+  display: inline-block; /*we add inline for transfrom*/
+}
+
+.nav_link:hover {
+  color: aqua;
+  text-decoration: underline;
+  transform: scale(4); /*make inline for transation  */
+}
+
+header {
   height: 100vh;
-  /* background-image: url(./img1.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(./image.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
-  background: url(./img1.png) no-repeat center; shorter form
+  filter: saturate(0);
+}
+
+header:hover {
+  filter: saturate(1);
+}
+
+main {
+  background-color: gray;
+  color: var(--text-color);
+  padding: var(--pading);
+}
+
+/* .row {
 } */
+
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+/* .skills {
+} */
+
+.section-title {
+  text-align: center;
+}
+
+.skills {
+  /* text-align: 80vh; */
+  min-height: 80vh;
+}
+
+.row {
+  min-height: 70vh;
+  /* background-color: red; */
+  gap: 1rem;
+}
+
+.card {
+  width: 25%;
+  background-color: bisque;
+  padding: var(--pading);
+  margin: 1rem;
+  color: black;
+  /* float: left; */
+
+  transform: skew(2deg);
+  transition: all 0.3s linear;
+}
+
+.card:hover {
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(205, 202, 202, 0.5);
+  /* transform: scale(1.2) rotate(45deg); */
+  /* transform: rotate(360deg); */
+  /* transform: skew(25deg); */
+  /* transform: translate(20px, -50px); */
+}
+
+/* .card-tile {
+} */
+
+/* .card-body footer {
+  background-color: yellow;
+  color: var(--text-color);
+  padding: var(--pading);
+} */
+
+footer {
+  background-color: brown;
+  color: var(--text-color);
+  padding: var(--pading);
+}
+
+/* floats:--  */
+.tuitorials {
+  height: 80vh;
+  /* background-color: black; */
+  /* flex-direction: column; */
+  /* position: relative; */
+  gap: 1rem;
+}
+
+.tuitorial {
+  /* float: left; */
+  background-color: orange;
+  /* margin: 1rem; */
+  height: 20vh;
+  width: 25%;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+
+  /* transition  */
+  border-radius: 10px;
+  transition-property: all; /*also we can specifiying like background-color; */
+  transition-duration: 0.3s;
+  /* transition-delay: 2s; */
+  transition-timing-function: linear;
+  /* add this in a single line  */
+  transition: all 0.3s linear;
+}
+
+/* transition properity */
+.tuitorial:hover {
+  background-color: aqua;
+  color: black;
+}
+
+/* .tuitorial h2 {
+  /* position: absolute;
+  top: 50%;
+  top: 50%;
+} */
+
+/* .item3 {
+  align-self: flex-end;
+  justify-self: flex-end;
+  justify-content: flex-end;
+} */
+
+/* tea members start  */
+
+.team-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* Functions are: "repeat(4, auto)" and "repeat(4, 1fr" and 
+  "minmax(0, 1fr)" */
+
+  gap: 1rem;
+}
+
+.team-member {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+#team-member2 {
+  background-color: green;
+  grid-column: 2 / span 3;
+}
+/* tea members ends  */
+
+/* #tuitorial1 {
+  background-color: green;
+  float: left;
+  width: 33%;
+}
+#tuitorial2 {
+  background-color: orange;
+  float: left;
+  width: 33%;
+}
+#tuitorial3 {
+  background-color: yellow;
+  float: left;
+  width: 33%;
+} */
+
+/* .parent {
+  background-color: aqua;
+  height: 20rem;
+  position: relative;
+}
+.child {
+  background-color: orange;
+  width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* position: relative; defult one is static;
+  top: 2rem;
+  left: 2rem;
+} */
+
+/* postion: static / reletive / fixed / absolute / sticky  */
+
+/* .tuitorials::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* 
+nav -> z index: 1
+header -> z-index: 0
+main -> z-index: 0
+footer -> x-index: 0 */
+
+/* responsiveness start here  */
+@media screen and (max-width: 992px) {
+  .tuitorials {
+    background-color: red;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* .tuitorials {
+    background-color: green;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  .skills {
+    /* background-color: yellow; */
+    padding: 2rem 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row .card {
+    width: 80%;
+  }
+  .tuitorials {
+    flex-direction: column;
+  }
+  .tuitorial {
+    padding: 1rem;
+    width: 80%;
+  }
+  .team-members {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* .team-member {
+    width: 80%;
+  } */
+}
+
+/* responsiveness end here  */
+
+/* tranfrom: rotate(), scale(), translate(), skew()*/
+
+.parent-div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-div {
+  background-color: chocolate;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+
+  position: relative;
+  /* animation-name: circle-anim;
+  animation-duration: 4s;
+  animation-timing-function: linear; */
+
+  animation: circle-anim 4s linear infinite;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes circle-anim {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: green;
+    top: -150px;
+    left: 0;
+  }
+  50% {
+    background-color: bisque;
+    /* top: 0;
+    left: 0; */
+  }
+  75% {
+    background-color: blueviolet;
+    top: 150px;
+    left: 0;
+  }
+  100% {
+    background-color: yellowgreen;
+    top: 0;
+    left: 0;
+  }
+}
