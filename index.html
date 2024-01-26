@@ -1,13 +1,20 @@
+<!-- for comment any section just click ctrl + slash(/) -->
+
 <!DOCTYPE html>
-<!--HTML File Version-->
 <html lang="en">
-  <!--Lanuage-->
   <head>
     <meta charset="UTF-8" />
-    <!--Optimizing Purpose-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="this is a html project" />
-    <title>Study with anish</title>
+    <title>Cascading Style Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- this is google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font aswsome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,257 +22,166 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!--internal css part
+  <style>
+    h1 {
+      background-color: orange;
+    }
+    p {
+      background-color: green;
+    }
+  </style> -->
   <body>
-    <nav>
-      <!--Six tye of headding there have-->
-      <a href="#">Home</a>
-      <!--link we usign ancore tag-->
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="https://www.google.com/" target="_blank">Visit Google</a>
-      <!--for open in a new tab we use target tag-->
-    </nav>
-    <!--header section starts-->
-
-    <header>
-      <h1>Tamal Barman</h1>
-      <strong><em>Software Develope</em></strong> <br />
-      <!--text formatiing tag-->
-      <img
-        src="https://i.postimg.cc/NMhcfPWW/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg"
-        alt="profile image"
-        width=""
-        height="200px"
-      />
-      <!--  <hr> hirizontal line-->
-      <!--more bigger tag most immportant one-->
-    </header>
-    <hr />
-
-    <main>
-      <!--<h2>Tamal Barman</h2>
-    <h3>Tamal Barman</h3>
-    <h4>Tamal Barman</h4>
-    <h5>Tamal Barman</h5>
-    <h6>Tamal Barman</h6>List importatn heading tag-->
-      <!--header section end-->
-      <dl>
-        <!--description list-->
-        <dt>HTML</dt>
-        <dd>Html is a basic thing for web design</dd>
-      </dl>
-
-      <!--Summaray section starts-->
-      <section id="summary">
-        <h2><em>Summary</em></h2>
+    <!--<h1>
+      style="background-color: orange; color: white" also we can add in this h1 tag
+      Now we are learning CSS
+    </h1>
+    for separating use semicolon; inline css style
+    <p>
+      style="background-color: green;" also we can add in this p tag
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum totam facere
+      natus expedita soluta quisquam labore velit accusamus delectus, sunt enim
+      beatae alias corrupti quas, ea, quo eum voluptatem voluptatibus?
+    </p>
+    <p>I am the first Paragraph</p>
+    <ul>
+      <li><a href="#">Google</a></li>
+    </ul>
+    <a href="#">Visit My Web page</a>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptas.
+      </p>
+    </div>-->
+    <!--<div>
+      <section id="sec1">
+        <h2>Section 1</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor itaque
-          quaerat nostrum excepturi perspiciatis numquam, harum sapiente enim in
-          inventore, illum temporibus, nihil ad laborum voluptate. Modi
-          voluptatum enim non.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          beatae quod asperiores modi iusto eius perspiciatis harum doloribus
+          illo sapiente!
         </p>
       </section>
-
-      <!--Summaray section end-->
-
-      <!--Job Experiacne Section Srats-->
-      <section id="Job">
-        <h2>Job Employement History</h2>
-        <ol type="A">
-          <!-- <ul> tag for unorderd list-->
-          <!--we can also change the listing catagory-->
-          <!--order list using li we also do it with <br> tag-->
-          <li>
-            <strong> Method Engineer </strong>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At nemo
-              sapiente ad quis mollitia, consequatur eum cupiditate explicabo
-              nesciunt, quia velit consequuntur, ipsam praesentium delectus
-              quibusdam id saepe aperiam iure.
-            </p>
-          </li>
-          <li>
-            <strong>Technican</strong>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-              rerum quis error tenetur ex, quia eaque esse vero nisi illo
-              architecto aspernatur quod nulla delectus, tempora, itaque labore
-              natus. Assumenda.
-            </p>
-          </li>
-          <li>
-            <strong>Web Developer</strong>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              necessitatibus doloribus, aliquam debitis quis sunt itaque eos
-              quam exercitationem repellat tenetur numquam in magni animi illum
-              natus voluptatum nisi. Nam.
-            </p>
-          </li>
-        </ol>
+      <section id="sec2">
+        <h2>Section 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          cupiditate facilis temporibus ab modi earum nostrum autem inventore
+          non laboriosam.
+        </p>
       </section>
-      <!--Job Experiacne Section Ends-->
+    </div>-->
+    <!--<button class="btn">button 1</button>
+    <button class="btn">button 2</button>
+    <button>button 3</button>
+    <div class="first-div">
+      <button class="btn">Inside div button</button>
+    </div>-->
 
-      <!--Education Sections start-->
-      <section id="Education">
-        <h2><em>Education History History</em></h2>
-        <ul>
-          <li>
-            <strong> B.Tech in Information Technology </strong>
-            <p>Agarpara, Kolkata</p>
-            <p>Gradding Point: 8.53</p>
-          </li>
-          <li>
-            <strong>Diploma in Mechanical Engineering</strong>
-            <p>Sodepur, Kolkata</p>
-            <p>Overall Percentage: 75.3%</p>
-          </li>
-        </ul>
-      </section>
-      <!--Education Sections ends-->
-
-      <!--Skills Sections starts-->
-      <section id="skills">
-        <h2><em>Skills</em></h2>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Technologies</th>
-              <!--table head with bold-->
-              <th>Skill Level</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <!--table data without bold-->
-                C,C++
-              </td>
-              <td>3/5</td>
-            </tr>
-            <tr>
-              <td>
-                <!--table data without bold-->
-                Java
-              </td>
-              <td>4/5</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!--Skills Sections end-->
-    </main>
-
-    <!--Contact section starts start-->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/mleqdzwg" method="post">
-        <!--from api-->
+    <!--<input type="text" placeholder="name" />
+    <input type="email" placeholder="age" /> -->
+    <!--<a href="#">Visit my Website</a>
+    <a href="#">Visit my Website2</a>
+    <a href="#">Visit my Website3</a>
+    <button disabled>Click Me Here</button>
+    <input type="text">-->
+    <!--<p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores
+      consequuntur excepturi molestiae ut? Blanditiis ullam consectetur odit
+      libero molestiae?
+    </p>-->
+    <!--<ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>-->
+    <!-- <div id="div1">
+      <p>paragraph1</p>
+      <p>paragraph2</p>
+      <div>
+        <p>paragraph3</p>
         <div>
-          <label for="Full Name">Full Name: </label>
-          <!--for who are blien and using for voice reader-->
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            placeholder="your name"
-            required
-          />
+          <p>paragraph4</p>
         </div>
-        <br />
-        <div>
-          <label for="Email">Email: </label>
-          <!--for who are blien and using for voice reader-->
-          <input
-            type="Email"
-            id="Email"
-            name="Email"
-            placeholder="Email"
-            required
-          />
-        </div>
-        <br />
-        <div>
-          <span>Gender: </span>
-          <input type="radio" id="male" name="male" />
-          <label for="male">Male</label>
+      </div>
+    </div>-->
+    <!--<div id="div1">
+      <p>paragraph 1</p>
+    </div>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>-->
+    <!-- <p>Hello From India, Currently I am living in Kolkata</p> -->
+    <!-- <h1>Hello From India</h1> -->
+    <!-- <a href="#">Home</a> -->
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas fuga
+      voluptatibus numquam quo aperiam quis eos sapiente cupiditate ea. Libero
+      harum accusamus earum quas dolore possimus nostrum, inventore corrupti.
+    </p> -->
+    <!-- <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2> -->
 
-          <input type="radio" id="female" name="female" />
-          <label for="female">Female</label>
-        </div>
+    <!-- using fa-4x we can bigger the icon 
+    we can adding our own class "icon"-->
+    <!-- <i class="fa-solid fa-trash icon"></i>
+    <span>&hearts;</span> -->
 
-        <br />
+    <!-- block elements -->
+    <!-- <h1>This is heading1</h1>
+    <h1>This is heading2</h1> -->
 
-        <div>
-          <label for="massage">Massage</label> <br />
-          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-        </div>
-        <!--<input type="Email" placeholder="your email" required /> -->
+    <!-- inline elements -->
+    <!-- <a href="#">Link 1</a>
+    <a href="#">Link 2</a> -->
 
-        <!--<input type="Password" />
-      <input type="color" />
-      <input type="date" /> -->
+    <!-- <p id="para1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, non?
+    </p>
+    <p id="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+      cupiditate.
+    </p> -->
 
-        <button type="submit" aria-label="send me a good massage">
-          Send Massage
-        </button>
-      </form>
+    <!-- opacity -->
+    <!-- <img src="./img1.png" alt=""> -->
 
-      <br />
-      <br />
+    <!-- <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+        quisquam repudiandae nihil harum sequi blanditiis excepturi soluta
+        dolorum architecto, ut accusamus a ea voluptates eum debitis fugit
+        dolores sit magnam quaerat aut autem corporis illo! Perspiciatis animi
+        vero enim itaque tenetur voluptatibus quam labore nulla, unde nihil
+        omnis rem numquam inventore eaque deleniti nobis illum architecto quos
+        nemo sint vel fugit neque consequuntur est! Tenetur quisquam atque illo
+        quibusdam error, aut placeat expedita sint nobis doloribus delectus,
+        dolores id ratione corrupti dolorem quo voluptates quam, assumenda totam
+        perferendis. Quasi odit officiis quas dolor ab. Quod delectus laborum
+        numquam facere illum.
+      </p>
+    </div> -->
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505.494379069584!2d88.38464815807173!3d22.667053551615588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c368cc8a59b%3A0x275faee2b9ef0537!2sRanipark%20Sarbojanin%20Durgotsav!5e0!3m2!1sen!2sin!4v1705481553557!5m2!1sen!2sin"
-        width="250"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        title="map of my address"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-
-      <!--<iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/OSOA9n4c13g?si=yknB1G2VgUuuNOcF"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>-->
-      <!--<audio src="/audio/A1.mp3"></audio> for adding audio -->
-    </section>
-    <!--Contact section starts ends-->
-    <!--fotter section starts-->
-    <footer>
-      <p>Develope With &hearts; Tamal Barman</p>
-      <p>Copyright &copy;2024</p>
-      <!--Entityt simbol-->
-      <a href="https://www.facebook.com/tamalbarman86/" target="_blank"
-        ><i class="fa-brands fa-facebook"></i
-      ></a>
-      <!--create linkable icon-->
-      <i class="fab fa-youtube"></i>
-      <i class="fab fa-linkedin-in"></i>
-      <i class="fab fa-twitter"></i>
-    </footer>
-    <!--fotter section ends-->
-
-    <!--<nav> scemantic html 5 strcuture
-
-        </nav>
-    <header></header>
+    <header>
+      <h2>This is Header</h2>
+    </header>
     <main>
-      <section>about me</section>
-      <section>Edutcation</section>
-      <section>Skills</section>
-      <section>about me</section>>
-    </main> -->
-
-    <!-- <a href="">Visit my web page</a> if you create a link make it descriable
-    <div role="button">click me</div> explicitly describe
-    <button>clcik me</button> -->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus unde
+        vero consectetur, temporibus voluptatum exercitationem quod velit ab
+        iste consequatur sequi ullam voluptates eos porro aliquid! Ullam
+        voluptatum incidunt sit sequi? Expedita pariatur rerum qui corporis
+        tempora perspiciatis animi nesciunt! Voluptas labore doloremque,
+        pariatur dolores culpa similique aspernatur molestiae eius adipisci
+        dolorem fugiat expedita architecto, ex tempora rem cumque ipsam
+        cupiditate. Modi laborum impedit quasi soluta eius mollitia? Animi sit
+        aperiam quam laborum, quos odio architecto quas inventore consectetur
+        mollitia dolorem asperiores modi corporis placeat, a, minus officiis!
+        Nulla ratione delectus totam veritatis? Voluptas error commodi dolore
+        ratione. Tempore, porro.
+      </p>
+    </main>
   </body>
 </html>
