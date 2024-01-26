@@ -22,8 +22,11 @@ Tamal Barman<br/>
 This is second line
 This is third line
 This ia fourth line
+<<<<<<< HEAD
 THis is fifith line
 This is sixth line
+=======
+>>>>>>> 41fdd0e5a46693f7653fee9d3df3ad32f83292da
 
 ## <!-- (___) for under line-->
 
